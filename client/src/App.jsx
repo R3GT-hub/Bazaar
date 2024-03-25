@@ -3,10 +3,11 @@ import './App.css'
 import Home from './pages/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Cart from './components/Cart'
+import Cart from './pages/Cart'
 import {createBrowserRouter,Outlet,RouterProvider,ScrollRestoration} from 'react-router-dom'
 import { productsData } from './api/Api'
 import Product from './components/Product'
+import Login from './pages/Login'
 
 const Layout=()=>{
   return (
@@ -34,6 +35,10 @@ const router=createBrowserRouter([{
     {
       path:"/cart",
       element:<Cart/>,
+    },
+    {
+      path:"/login",
+      element:<Login/>
     }
   ]
 }])
