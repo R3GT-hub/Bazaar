@@ -20,7 +20,7 @@ const dispatch=useDispatch();
             className="flex items-center justify-between gap-6 mt-6"
           >
             <div className="flex items-center gap-2">
-              <MdOutlineClose className="text-xl text-gray-600 hover:text-red-600 cursor-pointer duration-300" onClick={()=>dispatch(deleteItem(item._id))&toast.error(`${item.title} is removed`)} />
+              <MdOutlineClose className="text-xl text-gray-600 hover:text-red-600 cursor-pointer duration-300" onClick={()=>dispatch(deleteItem(item._id)) } />
               <img
                 className=" w-32 h-32 object-cover "
                 src={item.image}
